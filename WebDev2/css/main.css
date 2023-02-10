@@ -1,0 +1,11 @@
+body
+{
+   background: gray;
+   font-family: 'Open Sans', sans-serif;
+   
+}
+
+nav ul {
+   list-style: none;
+   padding-left: 0px;
+}
