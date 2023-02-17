@@ -1,0 +1,17 @@
+body{
+margin: 15px;
+}
+#container{
+border: 1px solid black;
+padding: 1em;
+width: 700px;
+margin: auto;
+}
+main{
+    padding: 10px;
+}
+header,footer{
+    background: black;
+    color:white;
+    padding: 10px;
+}
