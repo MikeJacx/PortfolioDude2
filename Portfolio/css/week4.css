@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+h1
+{
+    display:inline-block;
+    font-size: 72px;
+    background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+    position: absolute;
+    left: 35%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+
+    animation-name: rainbowtext;
+    -webkit-animation: rainbowtext 1s ease infinite;
+            animation: rainbowtext 1s ease infinite;
+}
+/* I got some of this code from https://stackoverflow.com/questions/37653990/how-can-i-create-a-rainbow-effect-on-my-text */
+@keyframes rainbowtext
+{
+    0%{background-position:0% 100%}
+    50%{background-position:100% 0%}
+    100%{background-position:0% 100%}
+}
+
+@-webkit-keyframes rainbowtext
+{
+    0%{background-position:0% 100%}
+    50%{background-position:100% 0%}
+    100%{background-position:0% 100%}
+}
+
