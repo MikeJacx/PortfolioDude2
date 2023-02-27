@@ -1,7 +1,42 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Yellowtail', cursive;
+}
+body
+{
+    border-style: solid;
+    border-width: 150px;
+    border-left-width: 60px;
+    border-bottom: 100%;
+    border-right-width: 60px;
+    border-color: red;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) url(../imgs/Kitchen.jpeg);
+   background-position: center;
+   background-size: cover;
+    
+}
+h2
+{
+    top: 3%;
+    left: 14%;
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+h3
+{
+    color: #fff;
+    position: absolute;
+    display: flex;
+    top: 12%;
+    left: 12%;
+}
+h4
+{
+    position: absolute;
+    top: 16%;
+    font-size: 60px;
 }
 .container
 {
@@ -11,13 +46,33 @@
    padding-right: 8%;
    box-sizing: border-box;
    color: black;
+   
 }
 .navbar
 {
     height: 12%;
     align-items: center;
     display: flex;
+    position: absolute;
+    top: 1%;
+    right: 12%;
+    font-size: 10vw;
 }
+nav{
+    flex: 0;
+    text-align: right;
+ }
+ nav ul li
+ {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+ }
+ nav ul li a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: #fff;
+ }
 .col
 {
     flex-basis: 50%;
@@ -43,6 +98,28 @@ section
     background-position: center;
     background-size: cover;
     transition: .5s;
+}
+.back-arrow
+{
+left: 6%;
+width: 7vw;
+top: 2%;
+cursor: pointer;
+position: absolute;
+animation-name: move-left;
+ animation-duration: 3s;
+ animation-fill-mode: forwards;
+ animation-timing-function: step-end;
+ animation-iteration-count: infinite;
+}
+@keyframes move-left
+{
+   0%{left: 6%;}
+   25%{left: 5.5%;}
+   50%{left: 5%;}
+   70%{left: 4.5%;}
+   85%{left: 4%;}
+   100%{left: 3.5%;}
 }
 .Tommy{
     
@@ -106,11 +183,21 @@ h4{
     font-size: 40px;
 }
 
-@media all and (min-width: 769px)
+@media all and (min-width: 430px)
 {
     .container
 {
     width: 80%;
+}
+.navbar
+{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+nav li ul a
+{
+    flex:0 1;
 }
 .mobile
 {
@@ -127,7 +214,18 @@ justify-content: space-between;
 nav section{
     flex:0 1 48%;
 }
-
+h1
+{
+    opacity: 1;
+}
+.short-text
+    {
+        display: inline-block;
+    }
+    .long-text
+    {
+        display: none;
+    }
 
 
 }
@@ -135,5 +233,13 @@ nav section{
 {
     nav section{
         flex:0 1 32%;
+    }
+    .short-text
+    {
+        display: none;
+    }
+    .long-text
+    {
+        display: inline-block;
     }
 }
